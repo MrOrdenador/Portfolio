@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MrOrdenador - Web Developer</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com/3.4.15"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  </head>
+
+  <body class="h-screen flex flex-col justify-between">
+    <!-- Nav -->
+    <nav class="bg-[#19102B] fixed w-full top-0 z-50 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="#" class="text-2xl font-bold text-white">MrOrdenador</a>
+          <div class="hidden md:flex space-x-4">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#skills" class="hover:text-white transition">Skills</a>
+            <a href="#learning" class="hover:text-white transition">Learning</a>
+            <a href="#featured-projects" class="hover:text-white transition"
+              >Featured Projects</a
+            >
+            <a href="#customer-opinions" class="hover:text-white transition"
+              >Customers opinion</a
+            >
+            <a href="#contact" class="hover:text-white transition">
+              Contact me!
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-16">
+      <!-- Header-->
+      <header id="about" class="text-center py-10" data-aos="fade-down">
+        <div
+          class="github-profile-img-container cursor-pointer"
+          id="github-container"
+        >
+          <img
+            id="github-profile"
+            class="github-profile-img rounded-full w-32 h-32 mx-auto"
+            alt="GitHub Profile Image"
+          />
+        </div>
+        <h1 class="text-5xl font-bold text-gray-200 mb-2">MrOrdenador</h1>
+        <h2
+          class="text-3xl gradient-text"
+          id="typewriter"
+          style="min-height: 3rem"
+        >
+          I'm a
+        </h2>
+      </header>
+      <!-- GitHub Logo -->
+      <a
+        href="https://github.com/MrOrdenador"
+        target="_blank"
+        class="icon github-logo fixed bottom-4 right-4 z-50"
+        style="cursor: pointer"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <!-- Skills -->
+      <section id="skills" class="my-12 text-center" data-aos="fade-up">
+        <h2 class="section-title text-4xl text-gray-300 mb-4">Skills</h2>
+        <div class="icon-container">
+          <a href="https://javascript.com" class="icon">
+            <i class="fa-brands fa-js"></i>
+          </a>
+          <a href="https://nodejs.org" class="icon">
+            <i class="fa-brands fa-node"></i>
+          </a>
+          <a href="https://html.com" class="icon">
+            <i class="fa-brands fa-html5"></i>
+          </a>
+          <a href="https://css3.com" class="icon">
+            <i class="fa-brands fa-css3"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Learning-->
+      <section id="learning" class="my-12 text-center" data-aos="fade-right">
+        <h2 class="section-title text-4xl text-gray-300 mb-4">Learning</h2>
+        <div class="flex justify-center">
+          <a href="https://react.dev" class="icon">
+            <i class="fa-brands fa-react"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- Featured Projects -->
+    <section
+      id="featured-projects"
+      class="my-12 text-center"
+      data-aos="fade-left"
+    >
+      <h2 class="section-title text-4xl text-gray-300 mb-4">
+        Featured Projects
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <!-- Project 1 - Portfolio -->
+        <div
+          class="project-card bg-[#2A2143] p-6 rounded-lg shadow-lg text-left relative"
+        >
+          <h3 class="text-2xl font-bold text-white mb-2">Portfolio</h3>
+          <p class="text-gray-400 mb-4">A website to showcase my experience</p>
+          <div class="absolute bottom-4 left-4">
+            <a href="https://github.com/MrOrdenador/Portfolio" target="_blank">
+              <button class="cssbuttons-io">
+                <span>
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  Code
+                </span>
+              </button>
+            </a>
+          </div>
+          <div class="absolute bottom-4 right-4 flex space-x-4">
+            <a
+              href="https://html.com"
+              target="_blank"
+              class="text-red-500 text-3xl"
+            >
+              <i class="fa-brands fa-html5"></i>
+            </a>
+            <a
+              href="https://css3.com"
+              target="_blank"
+              class="text-blue-500 text-3xl"
+            >
+              <i class="fa-brands fa-css3"></i>
+            </a>
+            <a
+              href="https://javascript.com"
+              target="_blank"
+              class="text-yellow-400 text-3xl"
+            >
+              <i class="fa-brands fa-js"></i>
+            </a>
+            <a
+              href="https://tailwindcss.com"
+              target="_blank"
+              class="flex items-center justify-center text-teal-400"
+            >
+              <svg
+                class="w-8 h-8"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231-1.253-.673-2.19-3.438-5.959-3.318ZM6.8 11.979A4.772 4.772 0 0 0 2 16.151a3.431 3.431 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231-1.253-.673-2.19-3.443-5.963-3.317Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 - ToDo List -->
+        <div
+          class="project-card bg-[#2A2143] p-6 rounded-lg shadow-lg text-left relative"
+        >
+          <h3 class="text-2xl font-bold text-white mb-2">ToDo List</h3>
+          <p class="text-gray-400 mb-4">A list of things I got to do</p>
+          <a>a </a>
+          <div class="absolute bottom-4 left-4 w-full flex justify-between">
+            <button
+              class="cssbuttons-io"
+              style="cursor: default"
+              onclick="event.preventDefault();"
+            >
+              <span>
+                <i class="fa fa-clock"></i>
+                <p style="margin-left: 5px">In Process</p>
+              </span>
+            </button>
+          </div>
+
+          <div class="absolute bottom-4 right-4 flex space-x-2">
+            <a
+              href="https://javascript.com"
+              target="_blank"
+              class="text-yellow-400 text-3xl"
+            >
+              <i class="fa-brands fa-js"></i>
+            </a>
+            <a
+              href="https://nodejs.org"
+              target="_blank"
+              class="text-green-400 text-3xl"
+            >
+              <i class="fa-brands fa-node"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 - Transcript Bot -->
+        <div
+          class="project-card bg-[#2A2143] p-6 rounded-lg shadow-lg text-left relative"
+        >
+          <h3 class="text-2xl font-bold text-white mb-2">Transcript Bot</h3>
+          <p class="text-gray-400 mb-4">A Discord transcript bot I made</p>
+          <a>a </a>
+          <div class="absolute bottom-4 left-4 w-full flex justify-between">
+            <a
+              href="https://github.com/MrOrdenador/Discord-Transcript-Bot"
+              target="_blank"
+            >
+              <button class="cssbuttons-io">
+                <span>
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  Code
+                </span>
+              </button>
+            </a>
+          </div>
+          <div class="absolute bottom-4 right-4 flex space-x-2">
+            <a
+              href="https://javascript.com"
+              target="_blank"
+              class="text-yellow-400 text-3xl"
+            >
+              <i class="fa-brands fa-js"></i>
+            </a>
+            <a
+              href="https://nodejs.org"
+              target="_blank"
+              class="text-green-400 text-3xl"
+            >
+              <i class="fa-brands fa-node"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customers Opinion -->
+    <section
+      id="customer-opinions"
+      class="my-12 text-center"
+      data-aos="fade-up"
+    >
+      <h2 class="section-title text-4xl text-gray-300 mb-6">
+        Customer Opinions
+      </h2>
+      <div
+        class="overflow-hidden w-4/5 p-6 rounded-lg shadow-lg mx-auto"
+        style="
+          background: linear-gradient(
+            135deg,
+            #180430,
+            #2b0636,
+            #24033a,
+            #1a0128
+          );
+        "
+      >
+        <div class="flex gap-6 animate-scroll">
+          <div class="flex-none w-48 text-center">
+            <img
+              src="src/pulu.png"
+              alt="Pulu"
+              class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-white font-semibold">Pulu - Discord Bot</h3>
+            <p class="text-gray-200 text-sm">
+              "It was good, I just wish there weren't so many bugs."
+            </p>
+          </div>
+
+          <div class="flex-none w-48 text-center">
+            <img
+              src="src/airo.png"
+              alt="AiroKun"
+              class="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+            />
+            <h3 class="text-white font-semibold">AiroKun - Discord Bot</h3>
+            <p class="text-gray-200 text-sm">
+              "Tbh it has been good, ran into a few issues here and there but
+              really great overall."
+            </p>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-4 right-4 text-white font-semibold text-lg"
+          style="left: 1%"
+        >
+          You could be here too!
+        </div>
+      </div>
+    </section>
+
+    <!-- Popup -->
+    <div
+      id="overlay"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+    ></div>
+    <div
+      id="contact-popup"
+      class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50"
+    >
+      <div class="bg-[#19102B] p-6 rounded shadow-lg text-center">
+        <h3 class="text-xl font-bold mb-4">Contact Me!</h3>
+        <p class="mb-4">Choose your email service:</p>
+        <div class="flex justify-center gap-4">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mrordenadorcontact@gmail.com&su=Contact with Me!"
+            target="_blank"
+            class="bg-red-500 text-white px-4 py-2 rounded flex items-center gap-2"
+          >
+            <i class="fab fa-google"></i> Gmail
+          </a>
+          <a
+            href="mailto:mrordenadorcontact@gmail.com?subject=Contact with Me!"
+            class="bg-blue-500 text-white px-4 py-2 rounded flex items-center gap-2"
+          >
+            <i class="fas fa-envelope"></i> Mail App
+          </a>
+        </div>
+        <button
+          onclick="closePopup()"
+          class="mt-4 px-4 py-2 bg-gray-600 text-white rounded"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <section id="contact" class="my-12 text-center" data-aos="fade-up">
+      <h2 class="section-title text-4xl text-gray-300 mb-6">
+        Wanna contact with me?
+      </h2>
+      <button
+        class="relative inline-flex items-center justify-center gap-2 p-4 text-sm font-medium text-white rounded-lg shadow-lg overflow-hidden group transition-all duration-300"
+        style="
+          background: linear-gradient(
+            135deg,
+            #180430,
+            #2b0636,
+            #24033a,
+            #1a0128
+          );
+        "
+        onclick="openPopup()"
+      >
+        <i class="fas fa-envelope"></i>
+
+        <span>Contact me!</span>
+      </button>
+
+      <button
+        id="scroll-to-top"
+        onclick="scrollToTop()"
+        class="hidden opacity-0 mx-auto block bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2 hover:bg-blue-600 transition-all duration-300 top-logo"
+        style="margin-top: 85px"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 10l7-7m0 0l7 7m-7-7v18"
+          />
+        </svg>
+        Go to the top
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-400">
+      © 2024 MrOrdenador
+    </footer>
+
+    <!-- Backend -->
+    <script>
+      AOS.init();
+
+      async function loadGitHubProfile() {
+        try {
+          const response = await fetch(
+            "https://api.github.com/users/MrOrdenador"
+          );
+          const data = await response.json();
+          const profileImg = document.getElementById("github-profile");
+          profileImg.src = data.avatar_url;
+          profileImg.alt = `${data.login} GitHub Profile Picture`;
+
+          // Redirigir al perfil de GitHub al hacer clic en la imagen
+          document
+            .getElementById("github-container")
+            .addEventListener("click", () => {
+              window.open(data.html_url, "_blank");
+            });
+        } catch (error) {
+          console.error("Error fetching GitHub profile:", error);
+        }
+      }
+
+      const words = [
+        "Fullstack Developer",
+        "Math Enthusiast",
+        "I'm not a robot (I think)",
+      ];
+      let i = 0,
+        isDeleting = false,
+        text = "",
+        delay = 150;
+
+      function typewriter() {
+        const element = document.getElementById("typewriter");
+        text = words[i].substring(0, text.length + (isDeleting ? -1 : 1));
+        element.textContent = text;
+
+        if (!isDeleting && text === words[i]) {
+          delay = 2000;
+          isDeleting = true;
+        } else if (isDeleting && text === "") {
+          isDeleting = false;
+          i = (i + 1) % words.length;
+        } else {
+          delay = 150;
+        }
+        setTimeout(typewriter, delay);
+      }
+
+      function openPopup() {
+        document.getElementById("contact-popup").classList.remove("hidden");
+        document.getElementById("overlay").classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closePopup() {
+        document.getElementById("contact-popup").classList.add("hidden");
+        document.getElementById("overlay").classList.add("hidden");
+        document.body.style.overflow = "auto";
+      }
+      window.addEventListener("scroll", () => {
+        const button = document.getElementById("scroll-to-top");
+        const nearBottom =
+          window.innerHeight + window.scrollY >=
+          document.body.offsetHeight - 50;
+
+        if (nearBottom) {
+          button.classList.remove("hidden");
+          button.classList.add("opacity-100");
+        } else {
+          button.classList.add("hidden");
+          button.classList.remove("opacity-100");
+        }
+      });
+
+      // Desplazamiento suave hacia arriba
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      typewriter();
+      loadGitHubProfile();
+    </script>
+  </body>
+</html>
