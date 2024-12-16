@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MrOrdenador - Fullstack Developer</title>
+    <title>MrOrdenador - Web Developer</title>
     <link href="styles.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com/3.4.15"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
@@ -12,8 +12,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <link id="favicon" rel="icon" href="src/image.png" type="image/png">
-
+    <link id="favicon" rel="icon" href="src/image.png" type="image/png" />
   </head>
 
   <body class="h-screen flex flex-col justify-between">
@@ -98,7 +97,11 @@
           <a href="https://react.dev" class="icon mr-2">
             <i class="fa-brands fa-react"></i>
           </a>
-          <a href="https://tailwindcss.com" target="_blank" class="icon ml-2 icon hover:text-[#38bdf8]">
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            class="icon ml-2 icon hover:text-[#38bdf8]"
+          >
             <svg
               class="w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +114,7 @@
             </svg>
           </a>
         </div>
-      </section>      
+      </section>
     </main>
     <!-- Featured Projects -->
     <section
@@ -281,7 +284,7 @@
         Customer Opinions
       </h2>
       <div
-        class="overflow-hidden w-4/5 p-6 rounded-lg shadow-lg mx-auto"
+        class="relative w-4/5 mx-auto p-6 rounded-lg shadow-lg overflow-hidden"
         style="
           background: linear-gradient(
             135deg,
@@ -292,8 +295,14 @@
           );
         "
       >
-        <div class="flex gap-6 animate-scroll">
-          <div class="flex-none w-48 text-center">
+        <!-- Carousel container -->
+        <div
+          id="carousel"
+          class="flex transition-transform duration-500 ease-in-out"
+          style="transform: translateX(0)"
+        >
+          <!-- Slide 1 -->
+          <div class="flex-none w-full text-center">
             <img
               src="src/pulu.png"
               alt="Pulu"
@@ -304,8 +313,8 @@
               "It was good, I just wish there weren't so many bugs."
             </p>
           </div>
-
-          <div class="flex-none w-48 text-center">
+          <!-- Slide 2 -->
+          <div class="flex-none w-full text-center">
             <img
               src="src/airo.png"
               alt="AiroKun"
@@ -318,12 +327,20 @@
             </p>
           </div>
         </div>
-        <div
-          class="absolute bottom-4 right-4 text-white font-semibold text-lg"
-          style="left: 1%"
+
+        <!-- Controls -->
+        <button
+          id="prev"
+          class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-600"
         >
-          You could be here too!
-        </div>
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button
+          id="next"
+          class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-600"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
     </section>
 
@@ -410,9 +427,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-6 text-center text-gray-400">
-      © 2024 MrOrdenador
-    </footer>
+    <footer class="py-6 text-center text-gray-400">© 2024 MrOrdenador</footer>
 
     <!-- Backend -->
     <script>
@@ -500,6 +515,29 @@
 
       typewriter();
       loadGitHubProfile();
+      const carousel = document.getElementById("carousel");
+      const prevButton = document.getElementById("prev");
+      const nextButton = document.getElementById("next");
+      let currentIndex = 0;
+
+      function updateCarousel() {
+        const slideWidth = carousel.children[0].offsetWidth;
+        carousel.style.transform = `translateX(-${
+          currentIndex * slideWidth
+        }px)`;
+      }
+
+      prevButton.addEventListener("click", () => {
+        currentIndex =
+          (currentIndex - 1 + carousel.children.length) %
+          carousel.children.length;
+        updateCarousel();
+      });
+
+      nextButton.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % carousel.children.length;
+        updateCarousel();
+      });
     </script>
   </body>
 </html>
