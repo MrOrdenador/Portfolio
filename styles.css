@@ -346,3 +346,17 @@ a {
     height: auto;
   }
 }
+@media (max-width: 768px) {
+  #carousel {
+    display: block;
+  }
+
+  #carousel .flex-none {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 2xl;
+  }
+}
