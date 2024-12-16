@@ -5,6 +5,7 @@ body {
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   color: white;
+  font-family: 'Jura', sans-serif;
 }
 
 .gradient-text {
