@@ -55,13 +55,13 @@ body {
 .hover-text {
   position: absolute;
   top: 50%;
-  left: -100px; /* Posición inicial fuera de la vista */
+  left: -100px;
   transform: translateY(-50%);
   font-size: 1.2rem;
   color: #ffffff;
   font-weight: bold;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  opacity: 0; /* Invisible inicialmente */
+  opacity: 0;
   transition: all 0.3s ease;
 }
 
@@ -71,11 +71,11 @@ body {
 
 @keyframes moveOut {
   0% {
-    left: -100px; /* Fuera de la vista */
+    left: -100px;
     opacity: 0;
   }
   100% {
-    left: 170px; /* Derecha de la imagen */
+    left: 170px;
     opacity: 1;
   }
 }
