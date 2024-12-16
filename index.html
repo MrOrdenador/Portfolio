@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MrOrdenador - Web Developer</title>
+    <title>MrOrdenador - Fullstack Developer</title>
     <link href="styles.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com/3.4.15"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
@@ -98,7 +98,7 @@
           <a href="https://react.dev" class="icon mr-2">
             <i class="fa-brands fa-react"></i>
           </a>
-          <a href="https://tailwindcss.com" target="_blank" class="icon ml-2 icon hover:text-[#2DD4BF]">
+          <a href="https://tailwindcss.com" target="_blank" class="icon ml-2 icon hover:text-[#38bdf8]">
             <svg
               class="w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
@@ -129,6 +129,7 @@
         >
           <h3 class="text-2xl font-bold text-white mb-2">Portfolio</h3>
           <p class="text-gray-400 mb-4">A website to showcase my experience</p>
+          <a>a </a>
           <div class="absolute bottom-4 left-4">
             <a href="https://github.com/MrOrdenador/Portfolio" target="_blank">
               <button class="cssbuttons-io">
@@ -427,7 +428,6 @@
           profileImg.src = data.avatar_url;
           profileImg.alt = `${data.login} GitHub Profile Picture`;
 
-          // Redirigir al perfil de GitHub al hacer clic en la imagen
           document
             .getElementById("github-container")
             .addEventListener("click", () => {
@@ -491,7 +491,6 @@
         }
       });
 
-      // Desplazamiento suave hacia arriba
       function scrollToTop() {
         window.scrollTo({
           top: 0,
