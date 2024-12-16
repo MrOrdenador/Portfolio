@@ -5,6 +5,8 @@ body {
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   color: white;
+  margin: 0;
+  font-family: 'Jura', sans-serif;
 }
 
 .gradient-text {
@@ -95,6 +97,7 @@ body {
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .icon {
@@ -179,7 +182,6 @@ body {
 }
 
 #popup h3 {
-  border-radius: 30px;
   margin-top: 0;
   font-size: 1.5rem;
   text-align: center;
@@ -187,13 +189,11 @@ body {
 }
 
 #popup p {
-  border-radius: 30px;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 #popup button {
-  border-radius: 30px;
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
@@ -287,6 +287,7 @@ a {
 .cssbuttons-io:active {
   transform: scale(0.95);
 }
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -313,4 +314,31 @@ a {
 .top-logo:hover {
   transform: scale(1.15) rotate(-10deg);
   filter: brightness(1.5);
+}
+
+.featured-projects {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+    gap: 1rem;
+  }
+
+  .github-profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hover-text {
+    font-size: 1rem;
+  }
+
+  .featured-projects {
+    padding: 10px;
+  }
 }
