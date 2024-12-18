@@ -199,37 +199,69 @@
           class="project-card bg-[#2A2143] p-4 sm:p-5 rounded-lg shadow-lg text-left relative flex flex-col h-full"
         >
           <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">
-            ToDo List
+            To-Do List
           </h3>
-          <p class="text-gray-400 mb-2 sm:mb-3">A list of things I got to do</p>
-          <a>a </a>
+          <p class="text-gray-400 mb-2 sm:mb-3">
+            A website to help you remember what you got to do
+          </p>
           <div class="absolute bottom-2 left-2 w-full flex justify-between">
-            <button
-              class="cssbuttons-io"
-              style="cursor: default"
-              onclick="event.preventDefault();"
-            >
-              <span>
-                <i class="fa fa-clock"></i>
-                <p style="margin-left: 5px">In Process</p>
-              </span>
-            </button>
+            <a href="https://github.com/MrOrdenador/to-do-list" target="_blank">
+              <button class="cssbuttons-io">
+                <span>
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  Code
+                </span>
+              </button>
+            </a>
           </div>
 
-          <div class="absolute bottom-2 right-2 flex space-x-1">
+          <div class="absolute bottom-2 right-2 flex space-x-2">
+            <a
+              href="https://html.com"
+              target="_blank"
+              class="text-red-500 text-2xl sm:text-3xl"
+              aria-label="HTML"
+            >
+              <i class="fa-brands fa-html5"></i>
+            </a>
+            <a
+              href="https://css3.com"
+              target="_blank"
+              class="text-blue-500 text-2xl sm:text-3xl"
+              aria-label="CSS"
+            >
+              <i class="fa-brands fa-css3"></i>
+            </a>
             <a
               href="https://javascript.com"
               target="_blank"
               class="text-yellow-400 text-2xl sm:text-3xl"
+              aria-label="JavaScript"
             >
               <i class="fa-brands fa-js"></i>
             </a>
             <a
-              href="https://nodejs.org"
+              href="https://tailwindcss.com"
               target="_blank"
-              class="text-green-400 text-2xl sm:text-3xl"
+              class="text-teal-400 flex items-center justify-center text-2xl sm:text-3xl"
+              aria-label="Tailwind CSS"
             >
-              <i class="fa-brands fa-node"></i>
+              <svg
+                class="w-6 h-6 sm:w-8 sm:h-8"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231-1.253-.673-2.19-3.438-5.959-3.318ZM6.8 11.979A4.772 4.772 0 0 0 2 16.151a3.431 3.431 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231-1.253-.673-2.19-3.443-5.963-3.317Z"
+                ></path>
+              </svg>
             </a>
           </div>
         </div>
@@ -262,22 +294,6 @@
                   Code
                 </span>
               </button>
-            </a>
-          </div>
-          <div class="absolute bottom-2 right-2 flex space-x-1">
-            <a
-              href="https://javascript.com"
-              target="_blank"
-              class="text-yellow-400 text-2xl sm:text-3xl"
-            >
-              <i class="fa-brands fa-js"></i>
-            </a>
-            <a
-              href="https://nodejs.org"
-              target="_blank"
-              class="text-green-400 text-2xl sm:text-3xl"
-            >
-              <i class="fa-brands fa-node"></i>
             </a>
           </div>
         </div>
@@ -353,6 +369,25 @@
         </button>
       </div>
     </section>
+
+    <style>
+      @media (max-width: 768px) {
+        /* Ajuste para móviles */
+        #carousel {
+          display: block;
+        }
+
+        #carousel .flex-none {
+          width: 100% !important; /* Cada slide ocupa el 100% del ancho */
+          margin: 0 auto;
+        }
+
+        .section-title {
+          font-size: 2xl; /* Reducir tamaño del título en móviles */
+        }
+      }
+    </style>
+
     <!-- Popup -->
     <div
       id="overlay"
